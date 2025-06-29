@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+  <!-- Title of the page -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Link to Google Fonts for the Overpass font -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Link to the main stylesheet -->
+</head>
+
+<body>
+  <main>
+    <article class="rating-component-card">
+      <div id="rating-state" class="card-content-wrapper">
+        <img src="assets/images/icon-star.svg" alt="Star Icon" class="star-icon">
+        <h2>How did we do?</h2>
+        <p>Please let us know how we did with your support request.
+          All feedback is appreciated to help us improve our offering!</p>
+        <form class="rating-form">
+          <label>
+            <input type="radio" name="rating" value="1"> 1
+          </label>
+          <label>
+            <input type="radio" name="rating" value="2"> 2
+          </label>
+          <label>
+            <input type="radio" name="rating" value="3"> 3
+          </label>
+          <label>
+            <input type="radio" name="rating" value="4"> 4
+          </label>
+          <label>
+            <input type="radio" name="rating" value="5"> 5
+          </label>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+      <div id="thank-you-state" class="card-content-wrapper hidden">
+        <img src="assets/images/illustration-thank-you.svg" alt="Thank You Illustration" class="thank-you-image">
+        <p class="selected-rating">You selected <span id="selected-rating">5</span> out of 5</p>
+        <p><strong>Thank you!</strong></p>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!</p>
+      </div>
+    </article>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://cla91.github.io/">Claudia Cantiani</a>.
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
